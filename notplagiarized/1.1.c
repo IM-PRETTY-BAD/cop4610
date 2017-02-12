@@ -3,7 +3,6 @@
 #include <stdlib.h>
 
 int SharedVariable = 0;
-void *runner(void *param);
 void SimpleThread(void *arg);
 
 int main(int argc, char *argv[]){
