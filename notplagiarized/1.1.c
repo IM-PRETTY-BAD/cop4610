@@ -45,3 +45,6 @@ void SimpleThread(void *arg){
  printf("Thread %d sees final value %d\n",threadID,val);
  pthread_exit(0);
 }
+/* After testing this program with arguments 1,2,3,4,and 5, it can be
+seen that the threads
+do not necessarily finish in the order in which they were called.*/
