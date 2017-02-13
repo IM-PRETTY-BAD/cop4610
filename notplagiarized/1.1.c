@@ -45,5 +45,4 @@ void SimpleThread(void *arg){
  pthread_exit(0);
 }
 /* After testing this program with arguments 1,2,3,4,and 5, it can be
-seen that the threads
-do not necessarily finish in the order in which they were called.*/
+seen that the threads do not necessarily have the same final value.*/
