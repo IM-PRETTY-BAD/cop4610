@@ -100,8 +100,7 @@ void AnswerStart(){
 if(!in_session)
 pthread_cond_signal(&session_c);
 //The speaker does not begin answering until the conference is in
-session and it is their
-//turn to speak.
+//session and it is their turn to speak.
 pthread_cond_wait(&session_c, &answer_m);
 printf("Speaker starts to answer question for reporter %d.\n",
 current_reporter);
