@@ -37,8 +37,7 @@ void QuestionDone(int id);
 
 int main(int argc, char *argv[]) {
  if(argc != 3) {
-  printf("usage: %s <number of reporter threads> <capacity of
-conference room>\n", argv[0]);
+  printf("usage: %s number_of_reporters room_capacity \n", argv[0]);
   return 0;
  }
  int total_reporters=atoi(argv[1]);
@@ -125,8 +124,6 @@ sem_post(&room_capacity);
 
 void QuestionStart(int id){
 //Lock to ensure only the given reporter can ask a question at a time.
-
-
 pthread_mutex_lock(&question_m);
 printf("Reporter %d asks a question.\n", id);
 current_reporter = id;
