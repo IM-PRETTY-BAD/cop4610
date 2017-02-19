@@ -126,7 +126,7 @@ void QuestionStart(int id){
 pthread_mutex_lock(&question_m);
 printf("Reporter %d asks a question.\n", id);
 current_reporter = id;
-//Lock to ensure the speaker answers only once the reporter is finished.
+//Lock to ensure the speaker only answers the current reporter.
 pthread_mutex_lock(&answer_m);
 pthread_cond_signal(&session_c);
 pthread_cond_wait(&session_c, &answer_m);
