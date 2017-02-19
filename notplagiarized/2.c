@@ -41,9 +41,8 @@ int main(int argc, char *argv[]) {
   return 0;
  }
  int total_reporters=atoi(argv[1]);
- max_reporters=atoi(argv[2]);
  //Lock initialization.
- sem_init(&room_capacity, 0, max_reporters);
+ sem_init(&room_capacity, 0, atoi(argv[2]);
  pthread_mutex_init(&question_m, NULL);
  pthread_mutex_init(&answer_m, NULL);
  pthread_cond_init(&session_c, NULL);
