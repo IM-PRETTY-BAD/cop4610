@@ -37,7 +37,7 @@ void QuestionDone(int id);
 
 int main(int argc, char *argv[]) {
  if(argc != 3) {
-  printf("usage: %s number_of_reporters room_capacity \n", argv[0]);
+  printf("usage: %s number_of_reporters max_reporters \n", argv[0]);
   return 0;
  }
  int total_reporters=atoi(argv[1]);
