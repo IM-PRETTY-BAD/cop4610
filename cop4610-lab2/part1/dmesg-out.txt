@@ -1,0 +1,789 @@
+[    0.000000] Initializing cgroup subsys cpuset
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Linux version 2.6.36 (root@cop4610-desktop) (gcc version 4.4.3 (Ubuntu 4.4.3-4ubuntu5) ) #4 SMP Mon Feb 20 14:36:42 EST 2017
+[    0.000000] BIOS-provided physical RAM map:
+[    0.000000]  BIOS-e820: 0000000000000000 - 000000000009fc00 (usable)
+[    0.000000]  BIOS-e820: 000000000009fc00 - 00000000000a0000 (reserved)
+[    0.000000]  BIOS-e820: 00000000000f0000 - 0000000000100000 (reserved)
+[    0.000000]  BIOS-e820: 0000000000100000 - 000000001fff0000 (usable)
+[    0.000000]  BIOS-e820: 000000001fff0000 - 0000000020000000 (ACPI data)
+[    0.000000]  BIOS-e820: 00000000fffc0000 - 0000000100000000 (reserved)
+[    0.000000] Notice: NX (Execute Disable) protection cannot be enabled: non-PAE kernel!
+[    0.000000] DMI 2.5 present.
+[    0.000000] e820 update range: 0000000000000000 - 0000000000001000 (usable) ==> (reserved)
+[    0.000000] e820 remove range: 00000000000a0000 - 0000000000100000 (usable)
+[    0.000000] last_pfn = 0x1fff0 max_arch_pfn = 0x100000
+[    0.000000] MTRR default type: uncachable
+[    0.000000] MTRR variable ranges disabled:
+[    0.000000] x86 PAT enabled: cpu 0, old 0x7040600070406, new 0x7010600070106
+[    0.000000] CPU MTRRs all blank - virtualized system.
+[    0.000000] e820 update range: 0000000000002000 - 0000000000010000 (usable) ==> (reserved)
+[    0.000000] Scanning 1 areas for low memory corruption
+[    0.000000] modified physical RAM map:
+[    0.000000]  modified: 0000000000000000 - 0000000000001000 (reserved)
+[    0.000000]  modified: 0000000000001000 - 0000000000002000 (usable)
+[    0.000000]  modified: 0000000000002000 - 0000000000010000 (reserved)
+[    0.000000]  modified: 0000000000010000 - 000000000009fc00 (usable)
+[    0.000000]  modified: 000000000009fc00 - 00000000000a0000 (reserved)
+[    0.000000]  modified: 00000000000f0000 - 0000000000100000 (reserved)
+[    0.000000]  modified: 0000000000100000 - 000000001fff0000 (usable)
+[    0.000000]  modified: 000000001fff0000 - 0000000020000000 (ACPI data)
+[    0.000000]  modified: 00000000fffc0000 - 0000000100000000 (reserved)
+[    0.000000] initial memory mapped : 0 - 00c00000
+[    0.000000] found SMP MP-table at [c009fff0] 9fff0
+[    0.000000] init_memory_mapping: 0000000000000000-000000001fff0000
+[    0.000000]  0000000000 - 0000400000 page 4k
+[    0.000000]  0000400000 - 001fc00000 page 2M
+[    0.000000]  001fc00000 - 001fff0000 page 4k
+[    0.000000] kernel direct mapping tables up to 1fff0000 @ 15000-1a000
+[    0.000000] RAMDISK: 1556c000 - 18034000
+[    0.000000] ACPI: RSDP 000e0000 00024 (v02 VBOX  )
+[    0.000000] ACPI: XSDT 1fff0030 0003C (v01 VBOX   VBOXXSDT 00000001 ASL  00000061)
+[    0.000000] ACPI: FACP 1fff00f0 000F4 (v04 VBOX   VBOXFACP 00000001 ASL  00000061)
+[    0.000000] ACPI: DSDT 1fff0470 02118 (v01 VBOX   VBOXBIOS 00000002 INTL 20100528)
+[    0.000000] ACPI: FACS 1fff0200 00040
+[    0.000000] ACPI: APIC 1fff0240 00054 (v02 VBOX   VBOXAPIC 00000001 ASL  00000061)
+[    0.000000] ACPI: SSDT 1fff02a0 001CC (v01 VBOX   VBOXCPUT 00000002 INTL 20100528)
+[    0.000000] ACPI: Local APIC address 0xfee00000
+[    0.000000] 0MB HIGHMEM available.
+[    0.000000] 511MB LOWMEM available.
+[    0.000000]   mapped low ram: 0 - 1fff0000
+[    0.000000]   low ram: 0 - 1fff0000
+[    0.000000] kvm-clock: Using msrs 4b564d01 and 4b564d00
+[    0.000000] kvm-clock: cpu 0, msr 0:846941, boot clock
+[47788.882010] Zone PFN ranges:
+[47788.882012]   DMA      0x00000001 -> 0x00001000
+[47788.882014]   Normal   0x00001000 -> 0x0001fff0
+[47788.882015]   HighMem  empty
+[47788.882016] Movable zone start PFN for each node
+[47788.882017] early_node_map[3] active PFN ranges
+[47788.882018]     0: 0x00000001 -> 0x00000002
+[47788.882018]     0: 0x00000010 -> 0x0000009f
+[47788.882019]     0: 0x00000100 -> 0x0001fff0
+[47788.882021] On node 0 totalpages: 130944
+[47788.882199] free_area_init_node: node 0, pgdat c0793940, node_mem_map c1001020
+[47788.882201]   DMA zone: 32 pages used for memmap
+[47788.882202]   DMA zone: 0 pages reserved
+[47788.882203]   DMA zone: 3952 pages, LIFO batch:0
+[47788.882245]   Normal zone: 992 pages used for memmap
+[47788.882246]   Normal zone: 125968 pages, LIFO batch:31
+[47788.883652] Using APIC driver default
+[47788.883896] ACPI: PM-Timer IO Port: 0x4008
+[47788.883898] ACPI: Local APIC address 0xfee00000
+[47788.883901] ACPI: LAPIC (acpi_id[0x00] lapic_id[0x00] enabled)
+[47788.883904] ACPI: IOAPIC (id[0x01] address[0xfec00000] gsi_base[0])
+[47788.883926] IOAPIC[0]: apic_id 1, version 17, address 0xfec00000, GSI 0-23
+[47788.883928] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[47788.883930] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[47788.883931] ACPI: IRQ0 used by override.
+[47788.883932] ACPI: IRQ2 used by override.
+[47788.883933] ACPI: IRQ9 used by override.
+[47788.883936] Using ACPI (MADT) for SMP configuration information
+[47788.883937] SMP: Allowing 1 CPUs, 0 hotplug CPUs
+[47788.883944] nr_irqs_gsi: 40
+[47788.883953] PM: Registered nosave memory: 0000000000002000 - 0000000000010000
+[47788.883954] PM: Registered nosave memory: 000000000009f000 - 00000000000a0000
+[47788.883955] PM: Registered nosave memory: 00000000000a0000 - 00000000000f0000
+[47788.883956] PM: Registered nosave memory: 00000000000f0000 - 0000000000100000
+[47788.883958] Allocating PCI resources starting at 20000000 (gap: 20000000:dffc0000)
+[47788.883959] Booting paravirtualized kernel on KVM
+[47788.883963] early_res array is doubled to 64 at [16000 - 167ff]
+[47788.883965] setup_percpu: NR_CPUS:8 nr_cpumask_bits:8 nr_cpu_ids:1 nr_node_ids:1
+[47788.884119] PERCPU: Embedded 14 pages/cpu @c1800000 s33088 r0 d24256 u4194304
+[47788.884125] pcpu-alloc: s33088 r0 d24256 u4194304 alloc=1*4194304
+[47788.884127] pcpu-alloc: [0] 0 
+[47788.884132] kvm-clock: cpu 0, msr 0:1807941, primary cpu clock
+[47788.884695] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 129920
+[47788.884698] Kernel command line: BOOT_IMAGE=/boot/cop46102-bzImage root=UUID=b3abc51c-d29b-44dc-b916-50b2e20922e7 ro splash
+[47788.884716] PID hash table entries: 2048 (order: 1, 8192 bytes)
+[47788.884725] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+[47788.884763] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+[47788.884857] Enabling fast FPU save and restore... done.
+[47788.884858] Enabling unmasked SIMD FPU exception support... done.
+[47788.884859] Initializing CPU#0
+[47788.884876] xsave/xrstor: enabled xstate_bv 0x7, cntxt size 0x340
+[47788.885220] allocated 2621100 bytes of page_cgroup
+[47788.885221] please try 'cgroup_disable=memory' option if you don't want memory cgroups
+[47788.885224] Subtract (45 early reservations)
+[47788.885226]   #1 [0000001000 - 0000002000]   EX TRAMPOLINE
+[47788.885227]   #2 [0000100000 - 00008e106c]   TEXT DATA BSS
+[47788.885228]   #3 [001556c000 - 0018034000]         RAMDISK
+[47788.885229]   #4 [00008e2000 - 00008e510c]             BRK
+[47788.885230]   #5 [000009f800 - 000009fff0]   BIOS reserved
+[47788.885231]   #6 [000009fff0 - 00000a0000]    MP-table mpf
+[47788.885232]   #7 [00000a0000 - 00000e1300]   BIOS reserved
+[47788.885233]   #8 [00000e13e0 - 0000100000]   BIOS reserved
+[47788.885234]   #9 [00000e1300 - 00000e13e0]    MP-table mpc
+[47788.885235]   #10 [0000010000 - 0000011000]      TRAMPOLINE
+[47788.885236]   #11 [0000011000 - 0000015000]     ACPI WAKEUP
+[47788.885237]   #12 [0000015000 - 0000016000]         PGTABLE
+[47788.885238]   #13 [0001000000 - 0001001000]         BOOTMEM
+[47788.885239]   #14 [0001001000 - 0001401000]         BOOTMEM
+[47788.885240]   #15 [0001401000 - 0001401004]         BOOTMEM
+[47788.885241]   #16 [0001401040 - 0001401100]         BOOTMEM
+[47788.885242]   #17 [0001401100 - 0001401130]         BOOTMEM
+[47788.885243]   #18 [0001401140 - 0001402940]         BOOTMEM
+[47788.885244]   #19 [0001402940 - 0001402967]         BOOTMEM
+[47788.885245]   #20 [0001402980 - 0001402a7c]         BOOTMEM
+[47788.885246]   #21 [0001402a80 - 0001402ac0]         BOOTMEM
+[47788.885247]   #22 [0001402ac0 - 0001402b00]         BOOTMEM
+[47788.885248]   #23 [0001402b00 - 0001402b40]         BOOTMEM
+[47788.885249]   #24 [0001402b40 - 0001402b80]         BOOTMEM
+[47788.885250]   #25 [0001402b80 - 0001402bc0]         BOOTMEM
+[47788.885251]   #26 [0001402bc0 - 0001402c00]         BOOTMEM
+[47788.885252]   #27 [0001402c00 - 0001402c10]         BOOTMEM
+[47788.885253]   #28 [0001402c40 - 0001402c50]         BOOTMEM
+[47788.885254]   #29 [0001402c80 - 0001402cdb]         BOOTMEM
+[47788.885255]   #30 [0001402d00 - 0001402d5b]         BOOTMEM
+[47788.885255]   #31 [0001800000 - 000180e000]         BOOTMEM
+[47788.885256]   #32 [0001404d80 - 0001404d84]         BOOTMEM
+[47788.885257]   #33 [0001404dc0 - 0001404dc4]         BOOTMEM
+[47788.885259]   #34 [0001404e00 - 0001404e04]         BOOTMEM
+[47788.885259]   #35 [0001404e40 - 0001404e44]         BOOTMEM
+[47788.885260]   #36 [0001404e80 - 0001404f30]         BOOTMEM
+[47788.885261]   #37 [0001404f40 - 0001404fe8]         BOOTMEM
+[47788.885262]   #38 [0001402d80 - 0001404d80]         BOOTMEM
+[47788.885263]   #39 [0001405000 - 0001445000]         BOOTMEM
+[47788.885264]   #40 [0001445000 - 0001465000]         BOOTMEM
+[47788.885265]   #41 [0001465000 - 000146500c]         BOOTMEM
+[47788.885266]   #42 [0001465040 - 000146504c]         BOOTMEM
+[47788.885267]   #43 [0001465080 - 00014653c0]         BOOTMEM
+[47788.885268]   #44 [0001466000 - 00016e5eac]         BOOTMEM
+[47788.893941] Initializing HighMem for node 0 (00000000:00000000)
+[47788.893943] Memory: 464732k/524224k available (4733k kernel code, 59044k reserved, 2044k data, 676k init, 0k highmem)
+[47788.893945] virtual kernel memory layout:
+[47788.893945]     fixmap  : 0xfff15000 - 0xfffff000   ( 936 kB)
+[47788.893946]     pkmap   : 0xff800000 - 0xffc00000   (4096 kB)
+[47788.893946]     vmalloc : 0xe07f0000 - 0xff7fe000   ( 496 MB)
+[47788.893947]     lowmem  : 0xc0000000 - 0xdfff0000   ( 511 MB)
+[47788.893947]       .init : 0xc079f000 - 0xc0848000   ( 676 kB)
+[47788.893948]       .data : 0xc059f778 - 0xc079e948   (2044 kB)
+[47788.893948]       .text : 0xc0100000 - 0xc059f778   (4733 kB)
+[47788.893965] Checking if this processor honours the WP bit even in supervisor mode...Ok.
+[47788.893998] SLUB: Genslabs=13, HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[47788.894004] Hierarchical RCU implementation.
+[47788.894004] 	RCU-based detection of stalled CPUs is disabled.
+[47788.894017] 	Verbose stalled-CPUs detection is disabled.
+[47788.894020] NR_IRQS:2304 nr_irqs:256
+[47788.899407] Console: colour VGA+ 80x25
+[47788.938832] console [tty0] enabled
+[47788.939773] Detected 3591.702 MHz processor.
+[47788.940242] Calibrating delay loop (skipped) preset value.. 7183.40 BogoMIPS (lpj=14366808)
+[47788.940789] pid_max: default: 32768 minimum: 301
+[47788.941080] Security Framework initialized
+[47788.941312] AppArmor: AppArmor initialized
+[47788.941614] Mount-cache hash table entries: 512
+[47788.941919] Initializing cgroup subsys ns
+[47788.942458] Initializing cgroup subsys cpuacct
+[47788.942690] Initializing cgroup subsys memory
+[47788.942952] Initializing cgroup subsys devices
+[47788.943183] Initializing cgroup subsys freezer
+[47788.943444] Initializing cgroup subsys net_cls
+[47788.943709] CPU: Physical Processor ID: 0
+[47788.944142] mce: CPU supports 0 MCE banks
+[47788.944418] using mwait in idle threads.
+[47788.944703] Performance Events: unsupported p6 CPU model 60 no PMU driver, software events only.
+[47788.947976] SMP alternatives: switching to UP code
+[47788.960813] Freeing SMP alternatives: 20k freed
+[47788.961091] ACPI: Core revision 20100702
+[47788.961819] ftrace: converting mcount calls to 0f 1f 44 00 00
+[47788.962134] ftrace: allocating 19913 entries in 39 pages
+[47788.979780] Enabling APIC mode:  Flat.  Using 1 I/O APICs
+[47788.980964] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[47788.981231] CPU0: Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz stepping 03
+[47789.080868] Brought up 1 CPUs
+[47789.081116] Total of 1 processors activated (7183.40 BogoMIPS).
+[47789.081590] devtmpfs: initialized
+[47789.081930] regulator: core version 0.5
+[47789.082188] Time: 19:43:03  Date: 02/20/17
+[47789.082466] NET: Registered protocol family 16
+[47789.082746] EISA bus registered
+[47789.082995] ACPI: bus type pci registered
+[47789.083342] PCI: PCI BIOS revision 2.10 entry at 0xfda26, last bus=0
+[47789.083623] PCI: Using configuration type 1 for base access
+[47789.084235] bio: create slab <bio-0> at 0
+[47789.085009] ACPI: EC: Look up EC in DSDT
+[47789.085190] ACPI: Executed 1 blocks of module-level executable AML code
+[47789.086769] ACPI: Interpreter enabled
+[47789.087001] ACPI: (supports S0 S5)
+[47789.087332] ACPI: Using IOAPIC for interrupt routing
+[47789.089199] ACPI: No dock devices found.
+[47789.089469] PCI: Ignoring host bridge windows from ACPI; if necessary, use "pci=use_crs" and report a bug
+[47789.090644] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[47789.090974] pci_root PNP0A03:00: host bridge window [io  0x0000-0x0cf7] (ignored)
+[47789.090976] pci_root PNP0A03:00: host bridge window [io  0x0d00-0xffff] (ignored)
+[47789.090977] pci_root PNP0A03:00: host bridge window [mem 0x000a0000-0x000bffff] (ignored)
+[47789.090978] pci_root PNP0A03:00: host bridge window [mem 0x20000000-0xffdfffff] (ignored)
+[47789.091946] pci 0000:00:01.1: reg 20: [io  0xd000-0xd00f]
+[47789.092545] pci 0000:00:02.0: reg 10: [mem 0xe0000000-0xe0ffffff pref]
+[47789.094724] pci 0000:00:03.0: reg 10: [mem 0xf0000000-0xf001ffff]
+[47789.094973] pci 0000:00:03.0: reg 18: [io  0xd010-0xd017]
+[47789.095766] pci 0000:00:04.0: reg 10: [io  0xd020-0xd03f]
+[47789.095898] pci 0000:00:04.0: reg 14: [mem 0xf0400000-0xf07fffff]
+[47789.096029] pci 0000:00:04.0: reg 18: [mem 0xf0800000-0xf0803fff pref]
+[47789.096645] pci 0000:00:05.0: reg 10: [io  0xd100-0xd1ff]
+[47789.096686] pci 0000:00:05.0: reg 14: [io  0xd200-0xd23f]
+[47789.097101] pci 0000:00:06.0: reg 10: [mem 0xf0804000-0xf0804fff]
+[47789.098559] pci 0000:00:0d.0: reg 10: [io  0xd240-0xd247]
+[47789.098800] pci 0000:00:0d.0: reg 18: [io  0xd250-0xd257]
+[47789.099069] pci 0000:00:0d.0: reg 20: [io  0xd260-0xd26f]
+[47789.099207] pci 0000:00:0d.0: reg 24: [mem 0xf0806000-0xf0807fff]
+[47789.099514] pci_bus 0000:00: on NUMA node 0
+[47789.099524] ACPI: PCI Interrupt Routing Table [\_SB_.PCI0._PRT]
+[47789.102404] ACPI: PCI Interrupt Link [LNKA] (IRQs 5 9 10 *11)
+[47789.103012] ACPI: PCI Interrupt Link [LNKB] (IRQs 5 9 10 *11)
+[47789.103947] ACPI: PCI Interrupt Link [LNKC] (IRQs 5 9 *10 11)
+[47789.104436] ACPI: PCI Interrupt Link [LNKD] (IRQs 5 *9 10 11)
+[47789.104942] vgaarb: device added: PCI:0000:00:02.0,decodes=io+mem,owns=io+mem,locks=none
+[47789.105376] vgaarb: loaded
+[47789.105623] SCSI subsystem initialized
+[47789.105861] libata version 3.00 loaded.
+[47789.105877] usbcore: registered new interface driver usbfs
+[47789.106145] usbcore: registered new interface driver hub
+[47789.106406] usbcore: registered new device driver usb
+[47789.106701] ACPI: WMI: Mapper loaded
+[47789.106923] PCI: Using ACPI for IRQ routing
+[47789.107156] PCI: pci_cache_line_size set to 64 bytes
+[47789.107277] reserve RAM buffer: 0000000000002000 - 000000000000ffff 
+[47789.107278] reserve RAM buffer: 000000000009fc00 - 000000000009ffff 
+[47789.107279] reserve RAM buffer: 000000001fff0000 - 000000001fffffff 
+[47789.107311] NetLabel: Initializing
+[47789.107607] NetLabel:  domain hash size = 128
+[47789.107841] NetLabel:  protocols = UNLABELED CIPSOv4
+[47789.108125] NetLabel:  unlabeled traffic allowed by default
+[47789.108387] Switching to clocksource kvm-clock
+[47789.109191] AppArmor: AppArmor Filesystem Enabled
+[47789.109480] pnp: PnP ACPI init
+[47789.109695] ACPI: bus type pnp registered
+[47789.110385] pnp: PnP ACPI: found 4 devices
+[47789.110618] ACPI: ACPI bus type pnp unregistered
+[47789.110888] PnPBIOS: Disabled
+[47789.144560] pci_bus 0000:00: resource 0 [io  0x0000-0xffff]
+[47789.144562] pci_bus 0000:00: resource 1 [mem 0x00000000-0xffffffff]
+[47789.144576] NET: Registered protocol family 2
+[47789.144829] IP route cache hash table entries: 4096 (order: 2, 16384 bytes)
+[47789.145215] TCP established hash table entries: 16384 (order: 5, 131072 bytes)
+[47789.145701] TCP bind hash table entries: 16384 (order: 5, 131072 bytes)
+[47789.146021] TCP: Hash tables configured (established 16384 bind 16384)
+[47789.146296] TCP reno registered
+[47789.146539] UDP hash table entries: 256 (order: 1, 8192 bytes)
+[47789.146810] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+[47789.147128] NET: Registered protocol family 1
+[47789.147397] pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+[47789.147676] pci 0000:00:01.0: Activating ISA DMA hang workarounds
+[47789.148002] pci 0000:00:02.0: Boot video device
+[47789.148067] PCI: CLS 0 bytes, default 64
+[47789.148083] Trying to unpack rootfs image as initramfs...
+[47789.660108] Freeing initrd memory: 43808k freed
+[47789.663199] platform rtc_cmos: registered platform RTC device (no PNP device found)
+[47789.663896] cpufreq-nforce2: No nForce2 chipset.
+[47789.664172] Scanning for low memory corruption every 60 seconds
+[47789.664516] audit: initializing netlink socket (disabled)
+[47789.664775] type=2000 audit(1487667701.608:1): initialized
+[47789.669271] HugeTLB registered 4 MB page size, pre-allocated 0 pages
+[47789.670017] VFS: Disk quotas dquot_6.5.2
+[47789.670291] Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+[47789.670735] fuse init (API version 7.15)
+[47789.670996] msgmni has been set to 993
+[47789.671478] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 253)
+[47789.671926] io scheduler noop registered
+[47789.672211] io scheduler deadline registered
+[47789.672449] io scheduler cfq registered (default)
+[47789.672748] pci_hotplug: PCI Hot Plug PCI Core version: 0.5
+[47789.673060] pciehp: PCI Express Hot Plug Controller Driver version: 0.4
+[47789.673403] ACPI: AC Adapter [AC] (on-line)
+[47789.673690] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+[47789.674138] ACPI: Power Button [PWRF]
+[47789.674401] input: Sleep Button as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input1
+[47789.674847] ACPI: Sleep Button [SLPF]
+[47789.675207] ACPI: acpi_idle registered with cpuidle
+[47789.675743] isapnp: Scanning for PnP cards...
+[47790.031257] isapnp: No Plug & Play device found
+[47790.031561] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[47790.032403] brd: module loaded
+[47790.032816] loop: module loaded
+[47790.033142] ata_piix 0000:00:01.1: version 2.13
+[47790.033371] scsi0 : ata_piix
+[47790.033763] scsi1 : ata_piix
+[47790.033983] ata1: PATA max UDMA/33 cmd 0x1f0 ctl 0x3f6 bmdma 0xd000 irq 14
+[47790.034307] ata2: PATA max UDMA/33 cmd 0x170 ctl 0x376 bmdma 0xd008 irq 15
+[47790.034733] Fixed MDIO Bus: probed
+[47790.034984] PPP generic driver version 2.4.2
+[47790.035257] tun: Universal TUN/TAP device driver, 1.6
+[47790.035546] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[47790.035838] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[47790.036160] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[47790.036490]   alloc irq_desc for 22 on node -1
+[47790.036491]   alloc kstat_irqs on node -1
+[47790.036501] ohci_hcd 0000:00:06.0: PCI INT A -> GSI 22 (level, low) -> IRQ 22
+[47790.036811] ohci_hcd 0000:00:06.0: OHCI Host Controller
+[47790.037967] ohci_hcd 0000:00:06.0: new USB bus registered, assigned bus number 1
+[47790.038510] ohci_hcd 0000:00:06.0: irq 22, io mem 0xf0804000
+[47790.095445] hub 1-0:1.0: USB hub found
+[47790.096504] hub 1-0:1.0: 12 ports detected
+[47790.098087] uhci_hcd: USB Universal Host Controller Interface driver
+[47790.100489] PNP: PS/2 Controller [PNP0303:PS2K,PNP0f03:PS2M] at 0x60,0x64 irq 1,12
+[47790.103352] serio: i8042 KBD port at 0x60,0x64 irq 1
+[47790.104427] serio: i8042 AUX port at 0x60,0x64 irq 12
+[47790.105726] mice: PS/2 mouse device common for all mice
+[47790.107378] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input2
+[47790.109932] rtc_cmos rtc_cmos: rtc core: registered rtc_cmos as rtc0
+[47790.111283] rtc0: alarms up to one day, 114 bytes nvram
+[47790.112601] device-mapper: uevent: version 1.0.3
+[47790.113856] device-mapper: ioctl: 4.18.0-ioctl (2010-06-29) initialised: dm-devel@redhat.com
+[47790.115803] device-mapper: multipath: version 1.1.1 loaded
+[47790.116906] device-mapper: multipath round-robin: version 1.0.0 loaded
+[47790.118314] EISA: Probing bus 0 at eisa.0
+[47790.119373] Cannot allocate resource for EISA slot 4
+[47790.121192] EISA: Detected 0 cards.
+[47790.122197] cpuidle: using governor ladder
+[47790.123226] cpuidle: using governor menu
+[47790.124518] TCP cubic registered
+[47790.125400] NET: Registered protocol family 10
+[47790.125970] lo: Disabled Privacy Extensions
+[47790.126459] NET: Registered protocol family 17
+[47790.126869] Registering the dns_resolver key type
+[47790.127293] Using IPI No-Shortcut mode
+[47790.127717] PM: Resume from disk failed.
+[47790.127724] registered taskstats version 1
+[47790.128497]   Magic number: 5:179:749
+[47790.128883] tty ttyS0: hash matches
+[47790.129314] rtc_cmos rtc_cmos: setting system clock to 2017-02-20 19:43:04 UTC (1487619784)
+[47790.130058] BIOS EDD facility v0.16 2004-Jun-25, 0 devices found
+[47790.130506] EDD information not available.
+[47790.193892] ata2.00: ATAPI: VBOX CD-ROM, 1.0, max UDMA/133
+[47790.195685] ata2.00: configured for UDMA/33
+[47790.197643] scsi 1:0:0:0: CD-ROM            VBOX     CD-ROM           1.0  PQ: 0 ANSI: 5
+[47790.202667] sr0: scsi3-mmc drive: 32x/32x xa/form2 tray
+[47790.203751] cdrom: Uniform CD-ROM driver Revision: 3.20
+[47790.205007] sr 1:0:0:0: Attached scsi CD-ROM sr0
+[47790.205086] sr 1:0:0:0: Attached scsi generic sg0 type 5
+[47790.206379] Freeing unused kernel memory: 676k freed
+[47790.207764] Write protecting the kernel text: 4736k
+[47790.208859] Write protecting the kernel read-only data: 1784k
+[47790.224874] udev: starting version 151
+[47790.226969] udevd (62): /proc/62/oom_adj is deprecated, please use /proc/62/oom_score_adj instead.
+[47790.276235] e1000: Intel(R) PRO/1000 Network Driver - version 7.3.21-k6-NAPI
+[47790.276623] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[47790.276951]   alloc irq_desc for 19 on node -1
+[47790.276964]   alloc kstat_irqs on node -1
+[47790.276987] e1000 0000:00:03.0: PCI INT A -> GSI 19 (level, low) -> IRQ 19
+[47790.615481] e1000 0000:00:03.0: eth0: (PCI:33MHz:32-bit) 08:00:27:60:a0:7b
+[47790.615803] e1000 0000:00:03.0: eth0: Intel(R) PRO/1000 Network Connection
+[47790.616093] ahci 0000:00:0d.0: version 3.0
+[47790.616156]   alloc irq_desc for 21 on node -1
+[47790.616156]   alloc kstat_irqs on node -1
+[47790.616167] ahci 0000:00:0d.0: PCI INT A -> GSI 21 (level, low) -> IRQ 21
+[47790.616518] ahci: SSS flag set, parallel bus scan disabled
+[47790.617320] ahci 0000:00:0d.0: AHCI 0001.0100 32 slots 1 ports 3 Gbps 0x1 impl SATA mode
+[47790.617802] ahci 0000:00:0d.0: flags: 64bit ncq stag only ccc 
+[47790.618355] scsi2 : ahci
+[47790.618638] ata3: SATA max UDMA/133 abar m8192@0xf0806000 port 0xf0806100 irq 21
+[47790.772771] usb 1-1: new full speed USB device using ohci_hcd and address 2
+[47790.936885] ata3: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[47790.938351] ata3.00: ATA-6: VBOX HARDDISK, 1.0, max UDMA/133
+[47790.939479] ata3.00: 25165824 sectors, multi 128: LBA48 NCQ (depth 31/32)
+[47790.941198] ata3.00: configured for UDMA/133
+[47790.942365] scsi 2:0:0:0: Direct-Access     ATA      VBOX HARDDISK    1.0  PQ: 0 ANSI: 5
+[47790.944581] sd 2:0:0:0: [sda] 25165824 512-byte logical blocks: (12.8 GB/12.0 GiB)
+[47790.946461] sd 2:0:0:0: [sda] Write Protect is off
+[47790.947613] sd 2:0:0:0: [sda] Mode Sense: 00 3a 00 00
+[47790.947883] sd 2:0:0:0: Attached scsi generic sg1 type 0
+[47790.949100] sd 2:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[47790.953753]  sda: sda1 sda2 < sda5 >
+[47790.955460] sd 2:0:0:0: [sda] Attached SCSI disk
+[47791.068376] usbcore: registered new interface driver hiddev
+[47791.073668] EXT3-fs: barriers not enabled
+[47791.074622] kjournald starting.  Commit interval 5 seconds
+[47791.075049] EXT3-fs (sda1): mounted filesystem with ordered data mode
+[47791.085436] input: VirtualBox USB Tablet as /devices/pci0000:00/0000:00:06.0/usb1/1-1/1-1:1.0/input/input3
+[47791.087273] generic-usb 0003:80EE:0021.0001: input,hidraw0: USB HID v1.10 Mouse [VirtualBox USB Tablet] on usb-0000:00:06.0-1/input0
+[47791.088074] usbcore: registered new interface driver usbhid
+[47791.088477] usbhid: USB HID core driver
+[47791.441261] usb 1-2: new full speed USB device using ohci_hcd and address 3
+[47793.290643] Adding 959484k swap on /dev/sda5.  Priority:-1 extents:1 across:959484k 
+[47793.316143] udev: starting version 151
+[47793.330633] EXT3-fs (sda1): using internal journal
+[47793.413043] udev: renamed network interface eth0 to eth3
+[47793.436692] apparmor_parser[379]: segfault at 0 ip b7737d37 sp bfb6cf9c error 4 in libc-2.11.1.so[b762b000+153000]
+[47793.563540] piix4_smbus 0000:00:07.0: SMBus base address uninitialized - upgrade BIOS or use force_addr=0xaddr
+[47794.884521] input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A03:00/LNXVIDEO:00/input/input4
+[47794.884773] ACPI: Video Device [GFX0] (multi-head: yes  rom: no  post: no)
+[47795.644884] apparmor_parser[472]: segfault at 0 ip b76dbd37 sp bff732dc error 4 in libc-2.11.1.so[b75cf000+153000]
+[47795.973653] e1000: eth3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[47795.991781] apparmor_parser[498]: segfault at 0 ip 08050ce1 sp bfdd0660 error 4 in apparmor_parser[8048000+bd000]
+[47796.468146] lp: driver loaded but no devices found
+[47797.053354] Initializing USB Mass Storage driver...
+[47797.053404] scsi3 : usb-storage 1-2:1.0
+[47797.053524] usbcore: registered new interface driver usb-storage
+[47797.053525] USB Mass Storage support registered.
+[47797.414843] psmouse serio1: ID: 10 00 64
+[47797.417347] input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input5
+[47797.932680] ppdev: user-space parallel port driver
+[47798.072789] scsi 3:0:0:0: Direct-Access     Generic  USB Flash Disk   0.00 PQ: 0 ANSI: 6
+[47798.072921] sd 3:0:0:0: Attached scsi generic sg2 type 0
+[47798.087007] sd 3:0:0:0: [sdb] 15730688 512-byte logical blocks: (8.05 GB/7.50 GiB)
+[47798.095520] sd 3:0:0:0: [sdb] Write Protect is off
+[47798.095521] sd 3:0:0:0: [sdb] Mode Sense: 23 00 00 00
+[47798.095523] sd 3:0:0:0: [sdb] Assuming drive cache: write through
+[47798.138202] sd 3:0:0:0: [sdb] Assuming drive cache: write through
+[47798.146761]  sdb: sdb1
+[47798.175245] sd 3:0:0:0: [sdb] Assuming drive cache: write through
+[47798.175247] sd 3:0:0:0: [sdb] Attached SCSI removable disk
+[47806.716921] eth3: no IPv6 routers present
+[47918.418357] name: init, parent pid:[0], pid: [1], state: 1
+[47918.418363] ---thread---name: init, parent pid:[0], pid: [1], state: 1
+[47918.418367] name: kthreadd, parent pid:[0], pid: [2], state: 1
+[47918.418370] ---thread---name: kthreadd, parent pid:[0], pid: [2], state: 1
+[47918.418374] name: ksoftirqd/0, parent pid:[2], pid: [3], state: 1
+[47918.418377] ---thread---name: ksoftirqd/0, parent pid:[2], pid: [3], state: 1
+[47918.418381] name: kworker/0:0, parent pid:[2], pid: [4], state: 1
+[47918.418384] ---thread---name: kworker/0:0, parent pid:[2], pid: [4], state: 1
+[47918.418387] name: kworker/u:0, parent pid:[2], pid: [5], state: 1
+[47918.418391] ---thread---name: kworker/u:0, parent pid:[2], pid: [5], state: 1
+[47918.418394] name: migration/0, parent pid:[2], pid: [6], state: 1
+[47918.418397] ---thread---name: migration/0, parent pid:[2], pid: [6], state: 1
+[47918.418401] name: cpuset, parent pid:[2], pid: [7], state: 1
+[47918.418404] ---thread---name: cpuset, parent pid:[2], pid: [7], state: 1
+[47918.418407] name: khelper, parent pid:[2], pid: [8], state: 1
+[47918.418411] ---thread---name: khelper, parent pid:[2], pid: [8], state: 1
+[47918.418414] name: netns, parent pid:[2], pid: [9], state: 1
+[47918.418417] ---thread---name: netns, parent pid:[2], pid: [9], state: 1
+[47918.418421] name: pm, parent pid:[2], pid: [10], state: 1
+[47918.418424] ---thread---name: pm, parent pid:[2], pid: [10], state: 1
+[47918.418428] name: sync_supers, parent pid:[2], pid: [11], state: 1
+[47918.418431] ---thread---name: sync_supers, parent pid:[2], pid: [11], state: 1
+[47918.418434] name: bdi-default, parent pid:[2], pid: [12], state: 1
+[47918.418437] ---thread---name: bdi-default, parent pid:[2], pid: [12], state: 1
+[47918.418441] name: kintegrityd, parent pid:[2], pid: [13], state: 1
+[47918.418444] ---thread---name: kintegrityd, parent pid:[2], pid: [13], state: 1
+[47918.418448] name: kblockd, parent pid:[2], pid: [14], state: 1
+[47918.418451] ---thread---name: kblockd, parent pid:[2], pid: [14], state: 1
+[47918.418454] name: kacpid, parent pid:[2], pid: [15], state: 1
+[47918.418457] ---thread---name: kacpid, parent pid:[2], pid: [15], state: 1
+[47918.418461] name: kacpi_notify, parent pid:[2], pid: [16], state: 1
+[47918.418464] ---thread---name: kacpi_notify, parent pid:[2], pid: [16], state: 1
+[47918.418468] name: kacpi_hotplug, parent pid:[2], pid: [17], state: 1
+[47918.418471] ---thread---name: kacpi_hotplug, parent pid:[2], pid: [17], state: 1
+[47918.418474] name: ata_sff, parent pid:[2], pid: [18], state: 1
+[47918.418478] ---thread---name: ata_sff, parent pid:[2], pid: [18], state: 1
+[47918.418481] name: khubd, parent pid:[2], pid: [19], state: 1
+[47918.418485] ---thread---name: khubd, parent pid:[2], pid: [19], state: 1
+[47918.418488] name: kseriod, parent pid:[2], pid: [20], state: 1
+[47918.418491] ---thread---name: kseriod, parent pid:[2], pid: [20], state: 1
+[47918.418495] name: kmmcd, parent pid:[2], pid: [21], state: 1
+[47918.418498] ---thread---name: kmmcd, parent pid:[2], pid: [21], state: 1
+[47918.418501] name: kworker/0:1, parent pid:[2], pid: [22], state: 1
+[47918.418505] ---thread---name: kworker/0:1, parent pid:[2], pid: [22], state: 1
+[47918.418509] name: khungtaskd, parent pid:[2], pid: [23], state: 1
+[47918.418512] ---thread---name: khungtaskd, parent pid:[2], pid: [23], state: 1
+[47918.418515] name: kswapd0, parent pid:[2], pid: [24], state: 1
+[47918.418519] ---thread---name: kswapd0, parent pid:[2], pid: [24], state: 1
+[47918.418522] name: ksmd, parent pid:[2], pid: [25], state: 1
+[47918.418525] ---thread---name: ksmd, parent pid:[2], pid: [25], state: 1
+[47918.418529] name: fsnotify_mark, parent pid:[2], pid: [26], state: 1
+[47918.418532] ---thread---name: fsnotify_mark, parent pid:[2], pid: [26], state: 1
+[47918.418535] name: aio, parent pid:[2], pid: [27], state: 1
+[47918.418538] ---thread---name: aio, parent pid:[2], pid: [27], state: 1
+[47918.418542] name: crypto, parent pid:[2], pid: [28], state: 1
+[47918.418545] ---thread---name: crypto, parent pid:[2], pid: [28], state: 1
+[47918.418548] name: kworker/u:1, parent pid:[2], pid: [31], state: 1
+[47918.418552] ---thread---name: kworker/u:1, parent pid:[2], pid: [31], state: 1
+[47918.418555] name: scsi_eh_0, parent pid:[2], pid: [33], state: 1
+[47918.418558] ---thread---name: scsi_eh_0, parent pid:[2], pid: [33], state: 1
+[47918.418562] name: scsi_eh_1, parent pid:[2], pid: [34], state: 1
+[47918.418565] ---thread---name: scsi_eh_1, parent pid:[2], pid: [34], state: 1
+[47918.418568] name: kworker/u:2, parent pid:[2], pid: [35], state: 1
+[47918.418571] ---thread---name: kworker/u:2, parent pid:[2], pid: [35], state: 1
+[47918.418575] name: kstriped, parent pid:[2], pid: [36], state: 1
+[47918.418578] ---thread---name: kstriped, parent pid:[2], pid: [36], state: 1
+[47918.418582] name: kmpathd, parent pid:[2], pid: [37], state: 1
+[47918.418585] ---thread---name: kmpathd, parent pid:[2], pid: [37], state: 1
+[47918.418589] name: kmpath_handlerd, parent pid:[2], pid: [38], state: 1
+[47918.418592] ---thread---name: kmpath_handlerd, parent pid:[2], pid: [38], state: 1
+[47918.418596] name: ksnapd, parent pid:[2], pid: [39], state: 1
+[47918.418599] ---thread---name: ksnapd, parent pid:[2], pid: [39], state: 1
+[47918.418602] name: kondemand, parent pid:[2], pid: [40], state: 1
+[47918.418605] ---thread---name: kondemand, parent pid:[2], pid: [40], state: 1
+[47918.418609] name: kconservative, parent pid:[2], pid: [41], state: 1
+[47918.418612] ---thread---name: kconservative, parent pid:[2], pid: [41], state: 1
+[47918.418617] name: scsi_eh_2, parent pid:[2], pid: [156], state: 1
+[47918.418620] ---thread---name: scsi_eh_2, parent pid:[2], pid: [156], state: 1
+[47918.418623] name: usbhid_resumer, parent pid:[2], pid: [172], state: 1
+[47918.418626] ---thread---name: usbhid_resumer, parent pid:[2], pid: [172], state: 1
+[47918.418657] name: kjournald, parent pid:[2], pid: [175], state: 1
+[47918.418661] ---thread---name: kjournald, parent pid:[2], pid: [175], state: 1
+[47918.418665] name: upstart-udev-br, parent pid:[1], pid: [218], state: 1
+[47918.418668] ---thread---name: upstart-udev-br, parent pid:[1], pid: [218], state: 1
+[47918.418672] name: udevd, parent pid:[1], pid: [221], state: 1
+[47918.418675] ---thread---name: udevd, parent pid:[1], pid: [221], state: 1
+[47918.418678] name: udevd, parent pid:[221], pid: [328], state: 1
+[47918.418682] ---thread---name: udevd, parent pid:[221], pid: [328], state: 1
+[47918.418685] name: udevd, parent pid:[221], pid: [329], state: 1
+[47918.418688] ---thread---name: udevd, parent pid:[221], pid: [329], state: 1
+[47918.418692] name: rsyslogd, parent pid:[1], pid: [448], state: 1
+[47918.418695] ---thread---name: rsyslogd, parent pid:[1], pid: [448], state: 1
+[47918.418698] ---thread---name: rsyslogd, parent pid:[1], pid: [455], state: 1
+[47918.418702] ---thread---name: rsyslogd, parent pid:[1], pid: [456], state: 1
+[47918.418705] name: dbus-daemon, parent pid:[1], pid: [464], state: 1
+[47918.418709] ---thread---name: dbus-daemon, parent pid:[1], pid: [464], state: 1
+[47918.418712] name: NetworkManager, parent pid:[1], pid: [475], state: 1
+[47918.418716] ---thread---name: NetworkManager, parent pid:[1], pid: [475], state: 1
+[47918.418719] ---thread---name: NetworkManager, parent pid:[1], pid: [505], state: 1
+[47918.418723] name: avahi-daemon, parent pid:[1], pid: [483], state: 1
+[47918.418726] ---thread---name: avahi-daemon, parent pid:[1], pid: [483], state: 1
+[47918.418730] name: avahi-daemon, parent pid:[483], pid: [487], state: 1
+[47918.418733] ---thread---name: avahi-daemon, parent pid:[483], pid: [487], state: 1
+[47918.418737] name: modem-manager, parent pid:[1], pid: [490], state: 1
+[47918.418740] ---thread---name: modem-manager, parent pid:[1], pid: [490], state: 1
+[47918.418743] name: kworker/0:2, parent pid:[2], pid: [491], state: 1
+[47918.418747] ---thread---name: kworker/0:2, parent pid:[2], pid: [491], state: 1
+[47918.418750] name: dhclient, parent pid:[475], pid: [502], state: 1
+[47918.418754] ---thread---name: dhclient, parent pid:[475], pid: [502], state: 1
+[47918.418757] name: wpa_supplicant, parent pid:[1], pid: [504], state: 1
+[47918.418760] ---thread---name: wpa_supplicant, parent pid:[1], pid: [504], state: 1
+[47918.418764] name: scsi_eh_3, parent pid:[2], pid: [554], state: 1
+[47918.418767] ---thread---name: scsi_eh_3, parent pid:[2], pid: [554], state: 1
+[47918.418771] name: usb-storage, parent pid:[2], pid: [555], state: 1
+[47918.418774] ---thread---name: usb-storage, parent pid:[2], pid: [555], state: 1
+[47918.418778] name: getty, parent pid:[1], pid: [559], state: 1
+[47918.418781] ---thread---name: getty, parent pid:[1], pid: [559], state: 1
+[47918.418784] name: getty, parent pid:[1], pid: [564], state: 1
+[47918.418787] ---thread---name: getty, parent pid:[1], pid: [564], state: 1
+[47918.418791] name: getty, parent pid:[1], pid: [572], state: 1
+[47918.418793] ---thread---name: getty, parent pid:[1], pid: [572], state: 1
+[47918.418797] name: getty, parent pid:[1], pid: [574], state: 1
+[47918.418800] ---thread---name: getty, parent pid:[1], pid: [574], state: 1
+[47918.418803] name: getty, parent pid:[1], pid: [577], state: 1
+[47918.418806] ---thread---name: getty, parent pid:[1], pid: [577], state: 1
+[47918.418810] name: acpid, parent pid:[1], pid: [579], state: 1
+[47918.418813] ---thread---name: acpid, parent pid:[1], pid: [579], state: 1
+[47918.418817] name: cron, parent pid:[1], pid: [608], state: 1
+[47918.418820] ---thread---name: cron, parent pid:[1], pid: [608], state: 1
+[47918.418823] name: atd, parent pid:[1], pid: [609], state: 1
+[47918.418826] ---thread---name: atd, parent pid:[1], pid: [609], state: 1
+[47918.418829] name: kpsmoused, parent pid:[2], pid: [614], state: 1
+[47918.418833] ---thread---name: kpsmoused, parent pid:[2], pid: [614], state: 1
+[47918.418836] name: gdm-binary, parent pid:[1], pid: [643], state: 1
+[47918.418840] ---thread---name: gdm-binary, parent pid:[1], pid: [643], state: 1
+[47918.418844] ---thread---name: gdm-binary, parent pid:[1], pid: [722], state: 1
+[47918.418847] name: console-kit-dae, parent pid:[1], pid: [649], state: 1
+[47918.418850] ---thread---name: console-kit-dae, parent pid:[1], pid: [649], state: 1
+[47918.418854] ---thread---name: console-kit-dae, parent pid:[1], pid: [650], state: 1
+[47918.418857] ---thread---name: console-kit-dae, parent pid:[1], pid: [651], state: 1
+[47918.418861] ---thread---name: console-kit-dae, parent pid:[1], pid: [652], state: 1
+[47918.418864] ---thread---name: console-kit-dae, parent pid:[1], pid: [653], state: 1
+[47918.418868] ---thread---name: console-kit-dae, parent pid:[1], pid: [654], state: 1
+[47918.418872] ---thread---name: console-kit-dae, parent pid:[1], pid: [655], state: 1
+[47918.418875] ---thread---name: console-kit-dae, parent pid:[1], pid: [657], state: 1
+[47918.418878] ---thread---name: console-kit-dae, parent pid:[1], pid: [658], state: 1
+[47918.418882] ---thread---name: console-kit-dae, parent pid:[1], pid: [659], state: 1
+[47918.418885] ---thread---name: console-kit-dae, parent pid:[1], pid: [660], state: 1
+[47918.418889] ---thread---name: console-kit-dae, parent pid:[1], pid: [661], state: 1
+[47918.418892] ---thread---name: console-kit-dae, parent pid:[1], pid: [662], state: 1
+[47918.418896] ---thread---name: console-kit-dae, parent pid:[1], pid: [663], state: 1
+[47918.418899] ---thread---name: console-kit-dae, parent pid:[1], pid: [664], state: 1
+[47918.418903] ---thread---name: console-kit-dae, parent pid:[1], pid: [665], state: 1
+[47918.418906] ---thread---name: console-kit-dae, parent pid:[1], pid: [666], state: 1
+[47918.418910] ---thread---name: console-kit-dae, parent pid:[1], pid: [667], state: 1
+[47918.418914] ---thread---name: console-kit-dae, parent pid:[1], pid: [668], state: 1
+[47918.418917] ---thread---name: console-kit-dae, parent pid:[1], pid: [669], state: 1
+[47918.418921] ---thread---name: console-kit-dae, parent pid:[1], pid: [670], state: 1
+[47918.418924] ---thread---name: console-kit-dae, parent pid:[1], pid: [671], state: 1
+[47918.418928] ---thread---name: console-kit-dae, parent pid:[1], pid: [672], state: 1
+[47918.418931] ---thread---name: console-kit-dae, parent pid:[1], pid: [673], state: 1
+[47918.418935] ---thread---name: console-kit-dae, parent pid:[1], pid: [674], state: 1
+[47918.418938] ---thread---name: console-kit-dae, parent pid:[1], pid: [675], state: 1
+[47918.418942] ---thread---name: console-kit-dae, parent pid:[1], pid: [676], state: 1
+[47918.418945] ---thread---name: console-kit-dae, parent pid:[1], pid: [677], state: 1
+[47918.418949] ---thread---name: console-kit-dae, parent pid:[1], pid: [678], state: 1
+[47918.418952] ---thread---name: console-kit-dae, parent pid:[1], pid: [679], state: 1
+[47918.418956] ---thread---name: console-kit-dae, parent pid:[1], pid: [680], state: 1
+[47918.418959] ---thread---name: console-kit-dae, parent pid:[1], pid: [681], state: 1
+[47918.418963] ---thread---name: console-kit-dae, parent pid:[1], pid: [682], state: 1
+[47918.418966] ---thread---name: console-kit-dae, parent pid:[1], pid: [683], state: 1
+[47918.418970] ---thread---name: console-kit-dae, parent pid:[1], pid: [684], state: 1
+[47918.418973] ---thread---name: console-kit-dae, parent pid:[1], pid: [685], state: 1
+[47918.418977] ---thread---name: console-kit-dae, parent pid:[1], pid: [686], state: 1
+[47918.418980] ---thread---name: console-kit-dae, parent pid:[1], pid: [687], state: 1
+[47918.418984] ---thread---name: console-kit-dae, parent pid:[1], pid: [688], state: 1
+[47918.418987] ---thread---name: console-kit-dae, parent pid:[1], pid: [689], state: 1
+[47918.418991] ---thread---name: console-kit-dae, parent pid:[1], pid: [690], state: 1
+[47918.418994] ---thread---name: console-kit-dae, parent pid:[1], pid: [691], state: 1
+[47918.418998] ---thread---name: console-kit-dae, parent pid:[1], pid: [692], state: 1
+[47918.419001] ---thread---name: console-kit-dae, parent pid:[1], pid: [693], state: 1
+[47918.419005] ---thread---name: console-kit-dae, parent pid:[1], pid: [694], state: 1
+[47918.419008] ---thread---name: console-kit-dae, parent pid:[1], pid: [695], state: 1
+[47918.419012] ---thread---name: console-kit-dae, parent pid:[1], pid: [696], state: 1
+[47918.419016] ---thread---name: console-kit-dae, parent pid:[1], pid: [697], state: 1
+[47918.419019] ---thread---name: console-kit-dae, parent pid:[1], pid: [698], state: 1
+[47918.419023] ---thread---name: console-kit-dae, parent pid:[1], pid: [699], state: 1
+[47918.419026] ---thread---name: console-kit-dae, parent pid:[1], pid: [700], state: 1
+[47918.419029] ---thread---name: console-kit-dae, parent pid:[1], pid: [701], state: 1
+[47918.419033] ---thread---name: console-kit-dae, parent pid:[1], pid: [702], state: 1
+[47918.419037] ---thread---name: console-kit-dae, parent pid:[1], pid: [703], state: 1
+[47918.419040] ---thread---name: console-kit-dae, parent pid:[1], pid: [704], state: 1
+[47918.419043] ---thread---name: console-kit-dae, parent pid:[1], pid: [705], state: 1
+[47918.419047] ---thread---name: console-kit-dae, parent pid:[1], pid: [706], state: 1
+[47918.419051] ---thread---name: console-kit-dae, parent pid:[1], pid: [707], state: 1
+[47918.419054] ---thread---name: console-kit-dae, parent pid:[1], pid: [708], state: 1
+[47918.419058] ---thread---name: console-kit-dae, parent pid:[1], pid: [709], state: 1
+[47918.419061] ---thread---name: console-kit-dae, parent pid:[1], pid: [710], state: 1
+[47918.419065] ---thread---name: console-kit-dae, parent pid:[1], pid: [711], state: 1
+[47918.419068] ---thread---name: console-kit-dae, parent pid:[1], pid: [713], state: 1
+[47918.419072] ---thread---name: console-kit-dae, parent pid:[1], pid: [719], state: 1
+[47918.419076] name: gdm-simple-slav, parent pid:[643], pid: [714], state: 1
+[47918.419079] ---thread---name: gdm-simple-slav, parent pid:[643], pid: [714], state: 1
+[47918.419083] ---thread---name: gdm-simple-slav, parent pid:[643], pid: [760], state: 1
+[47918.419087] name: cupsd, parent pid:[1], pid: [718], state: 1
+[47918.419090] ---thread---name: cupsd, parent pid:[1], pid: [718], state: 1
+[47918.419093] name: Xorg, parent pid:[714], pid: [759], state: 1
+[47918.419096] ---thread---name: Xorg, parent pid:[714], pid: [759], state: 1
+[47918.419100] name: gdm-session-wor, parent pid:[714], pid: [821], state: 1
+[47918.419103] ---thread---name: gdm-session-wor, parent pid:[714], pid: [821], state: 1
+[47918.419129] ---thread---name: gdm-session-wor, parent pid:[714], pid: [837], state: 1
+[47918.419133] name: gnome-session, parent pid:[821], pid: [836], state: 1
+[47918.419136] ---thread---name: gnome-session, parent pid:[821], pid: [836], state: 1
+[47918.419140] ---thread---name: gnome-session, parent pid:[821], pid: [896], state: 1
+[47918.419144] name: getty, parent pid:[1], pid: [853], state: 1
+[47918.419147] ---thread---name: getty, parent pid:[1], pid: [853], state: 1
+[47918.419151] name: flush-8:0, parent pid:[2], pid: [874], state: 1
+[47918.419154] ---thread---name: flush-8:0, parent pid:[2], pid: [874], state: 1
+[47918.419157] name: ssh-agent, parent pid:[836], pid: [885], state: 1
+[47918.419161] ---thread---name: ssh-agent, parent pid:[836], pid: [885], state: 1
+[47918.419164] name: dbus-launch, parent pid:[1], pid: [888], state: 1
+[47918.419168] ---thread---name: dbus-launch, parent pid:[1], pid: [888], state: 1
+[47918.419171] name: dbus-daemon, parent pid:[1], pid: [889], state: 1
+[47918.419175] ---thread---name: dbus-daemon, parent pid:[1], pid: [889], state: 1
+[47918.419178] name: gconfd-2, parent pid:[1], pid: [892], state: 1
+[47918.419181] ---thread---name: gconfd-2, parent pid:[1], pid: [892], state: 1
+[47918.419185] name: gnome-keyring-d, parent pid:[1], pid: [901], state: 1
+[47918.419188] ---thread---name: gnome-keyring-d, parent pid:[1], pid: [901], state: 1
+[47918.419192] ---thread---name: gnome-keyring-d, parent pid:[1], pid: [903], state: 1
+[47918.419195] ---thread---name: gnome-keyring-d, parent pid:[1], pid: [906], state: 1
+[47918.419199] name: gnome-settings-, parent pid:[1], pid: [902], state: 1
+[47918.419202] ---thread---name: gnome-settings-, parent pid:[1], pid: [902], state: 1
+[47918.419206] name: gvfsd, parent pid:[1], pid: [912], state: 1
+[47918.419209] ---thread---name: gvfsd, parent pid:[1], pid: [912], state: 1
+[47918.419212] name: gvfs-fuse-daemo, parent pid:[1], pid: [917], state: 1
+[47918.419216] ---thread---name: gvfs-fuse-daemo, parent pid:[1], pid: [917], state: 1
+[47918.419219] ---thread---name: gvfs-fuse-daemo, parent pid:[1], pid: [918], state: 1
+[47918.419223] ---thread---name: gvfs-fuse-daemo, parent pid:[1], pid: [919], state: 1
+[47918.419226] ---thread---name: gvfs-fuse-daemo, parent pid:[1], pid: [920], state: 1
+[47918.419230] name: polkit-gnome-au, parent pid:[836], pid: [923], state: 1
+[47918.419233] ---thread---name: polkit-gnome-au, parent pid:[836], pid: [923], state: 1
+[47918.419237] name: bluetooth-apple, parent pid:[836], pid: [926], state: 1
+[47918.419240] ---thread---name: bluetooth-apple, parent pid:[836], pid: [926], state: 1
+[47918.419244] name: pulseaudio, parent pid:[1], pid: [929], state: 1
+[47918.419247] ---thread---name: pulseaudio, parent pid:[1], pid: [929], state: 1
+[47918.419250] ---thread---name: pulseaudio, parent pid:[1], pid: [949], state: 1
+[47918.419254] name: rtkit-daemon, parent pid:[1], pid: [931], state: 1
+[47918.419257] ---thread---name: rtkit-daemon, parent pid:[1], pid: [931], state: 1
+[47918.419261] ---thread---name: rtkit-daemon, parent pid:[1], pid: [936], state: 1
+[47918.419264] ---thread---name: rtkit-daemon, parent pid:[1], pid: [937], state: 1
+[47918.419268] name: gnome-panel, parent pid:[836], pid: [932], state: 1
+[47918.419271] ---thread---name: gnome-panel, parent pid:[836], pid: [932], state: 1
+[47918.419274] name: metacity, parent pid:[836], pid: [934], state: 1
+[47918.419278] ---thread---name: metacity, parent pid:[836], pid: [934], state: 1
+[47918.419281] ---thread---name: metacity, parent pid:[836], pid: [1220], state: 1
+[47918.419285] name: polkitd, parent pid:[1], pid: [939], state: 1
+[47918.419288] ---thread---name: polkitd, parent pid:[1], pid: [939], state: 1
+[47918.419291] name: nautilus, parent pid:[836], pid: [941], state: 1
+[47918.419294] ---thread---name: nautilus, parent pid:[836], pid: [941], state: 1
+[47918.419298] name: nm-applet, parent pid:[836], pid: [943], state: 1
+[47918.419301] ---thread---name: nm-applet, parent pid:[836], pid: [943], state: 1
+[47918.419305] name: gnome-power-man, parent pid:[836], pid: [944], state: 1
+[47918.419308] ---thread---name: gnome-power-man, parent pid:[836], pid: [944], state: 1
+[47918.419312] name: gconf-helper, parent pid:[929], pid: [946], state: 1
+[47918.419315] ---thread---name: gconf-helper, parent pid:[929], pid: [946], state: 1
+[47918.419319] name: upowerd, parent pid:[1], pid: [951], state: 1
+[47918.419322] ---thread---name: upowerd, parent pid:[1], pid: [951], state: 1
+[47918.419325] name: hald, parent pid:[1], pid: [966], state: 1
+[47918.419328] ---thread---name: hald, parent pid:[1], pid: [966], state: 1
+[47918.419332] ---thread---name: hald, parent pid:[1], pid: [972], state: 1
+[47918.419335] name: hald-runner, parent pid:[966], pid: [969], state: 1
+[47918.419338] ---thread---name: hald-runner, parent pid:[966], pid: [969], state: 1
+[47918.419342] name: gvfsd-trash, parent pid:[1], pid: [998], state: 1
+[47918.419345] ---thread---name: gvfsd-trash, parent pid:[1], pid: [998], state: 1
+[47918.419349] name: gvfs-gdu-volume, parent pid:[1], pid: [1011], state: 1
+[47918.419352] ---thread---name: gvfs-gdu-volume, parent pid:[1], pid: [1011], state: 1
+[47918.419356] name: udisks-daemon, parent pid:[1], pid: [1022], state: 1
+[47918.419359] ---thread---name: udisks-daemon, parent pid:[1], pid: [1022], state: 1
+[47918.419363] ---thread---name: udisks-daemon, parent pid:[1], pid: [1099], state: 1
+[47918.419366] name: udisks-daemon, parent pid:[1022], pid: [1030], state: 1
+[47918.419370] ---thread---name: udisks-daemon, parent pid:[1022], pid: [1030], state: 1
+[47918.419374] name: bonobo-activati, parent pid:[1], pid: [1035], state: 1
+[47918.419377] ---thread---name: bonobo-activati, parent pid:[1], pid: [1035], state: 1
+[47918.419380] ---thread---name: bonobo-activati, parent pid:[1], pid: [1036], state: 1
+[47918.419384] name: gvfs-gphoto2-vo, parent pid:[1], pid: [1038], state: 1
+[47918.419387] ---thread---name: gvfs-gphoto2-vo, parent pid:[1], pid: [1038], state: 1
+[47918.419390] name: hald-addon-inpu, parent pid:[969], pid: [1039], state: 1
+[47918.419394] ---thread---name: hald-addon-inpu, parent pid:[969], pid: [1039], state: 1
+[47918.419398] name: hald-addon-stor, parent pid:[969], pid: [1048], state: 1
+[47918.419401] ---thread---name: hald-addon-stor, parent pid:[969], pid: [1048], state: 1
+[47918.419405] name: hald-addon-stor, parent pid:[969], pid: [1052], state: 1
+[47918.419408] ---thread---name: hald-addon-stor, parent pid:[969], pid: [1052], state: 1
+[47918.419412] name: hald-addon-acpi, parent pid:[969], pid: [1055], state: 1
+[47918.419415] ---thread---name: hald-addon-acpi, parent pid:[969], pid: [1055], state: 1
+[47918.419419] name: wnck-applet, parent pid:[1], pid: [1071], state: 1
+[47918.419422] ---thread---name: wnck-applet, parent pid:[1], pid: [1071], state: 1
+[47918.419425] name: trashapplet, parent pid:[1], pid: [1072], state: 1
+[47918.419429] ---thread---name: trashapplet, parent pid:[1], pid: [1072], state: 1
+[47918.419432] name: gvfs-afc-volume, parent pid:[1], pid: [1074], state: 1
+[47918.419436] ---thread---name: gvfs-afc-volume, parent pid:[1], pid: [1074], state: 1
+[47918.419439] ---thread---name: gvfs-afc-volume, parent pid:[1], pid: [1075], state: 1
+[47918.419443] name: indicator-apple, parent pid:[1], pid: [1082], state: 1
+[47918.419446] ---thread---name: indicator-apple, parent pid:[1], pid: [1082], state: 1
+[47918.419450] name: clock-applet, parent pid:[1], pid: [1083], state: 1
+[47918.419453] ---thread---name: clock-applet, parent pid:[1], pid: [1083], state: 1
+[47918.419456] name: indicator-apple, parent pid:[1], pid: [1084], state: 1
+[47918.419459] ---thread---name: indicator-apple, parent pid:[1], pid: [1084], state: 1
+[47918.419463] ---thread---name: indicator-apple, parent pid:[1], pid: [1354], state: 1
+[47918.419467] name: notification-ar, parent pid:[1], pid: [1086], state: 1
+[47918.419470] ---thread---name: notification-ar, parent pid:[1], pid: [1086], state: 1
+[47918.419473] name: gvfsd-metadata, parent pid:[1], pid: [1092], state: 1
+[47918.419477] ---thread---name: gvfsd-metadata, parent pid:[1], pid: [1092], state: 1
+[47918.419480] name: indicator-me-se, parent pid:[1], pid: [1093], state: 1
+[47918.419483] ---thread---name: indicator-me-se, parent pid:[1], pid: [1093], state: 1
+[47918.419487] name: indicator-sessi, parent pid:[1], pid: [1096], state: 1
+[47918.419490] ---thread---name: indicator-sessi, parent pid:[1], pid: [1096], state: 1
+[47918.419494] name: notify-osd, parent pid:[1], pid: [1154], state: 1
+[47918.419497] ---thread---name: notify-osd, parent pid:[1], pid: [1154], state: 1
+[47918.419500] name: indicator-sound, parent pid:[1], pid: [1156], state: 1
+[47918.419503] ---thread---name: indicator-sound, parent pid:[1], pid: [1156], state: 1
+[47918.419507] name: indicator-appli, parent pid:[1], pid: [1159], state: 1
+[47918.419510] ---thread---name: indicator-appli, parent pid:[1], pid: [1159], state: 1
+[47918.419514] name: indicator-messa, parent pid:[1], pid: [1161], state: 1
+[47918.419517] ---thread---name: indicator-messa, parent pid:[1], pid: [1161], state: 1
+[47918.419521] name: gnome-screensav, parent pid:[1], pid: [1164], state: 1
+[47918.419524] ---thread---name: gnome-screensav, parent pid:[1], pid: [1164], state: 1
+[47918.419527] name: gvfsd-burn, parent pid:[1], pid: [1166], state: 1
+[47918.419531] ---thread---name: gvfsd-burn, parent pid:[1], pid: [1166], state: 1
+[47918.419534] name: python, parent pid:[836], pid: [1170], state: 1
+[47918.419537] ---thread---name: python, parent pid:[836], pid: [1170], state: 1
+[47918.419541] name: update-notifier, parent pid:[836], pid: [1172], state: 1
+[47918.419544] ---thread---name: update-notifier, parent pid:[836], pid: [1172], state: 1
+[47918.419548] name: gdu-notificatio, parent pid:[836], pid: [1176], state: 1
+[47918.419551] ---thread---name: gdu-notificatio, parent pid:[836], pid: [1176], state: 1
+[47918.419555] name: evolution-alarm, parent pid:[836], pid: [1179], state: 1
+[47918.419558] ---thread---name: evolution-alarm, parent pid:[836], pid: [1179], state: 1
+[47918.419562] ---thread---name: evolution-alarm, parent pid:[836], pid: [1184], state: 1
+[47918.419565] name: system-service-, parent pid:[1], pid: [1192], state: 1
+[47918.419568] ---thread---name: system-service-, parent pid:[1], pid: [1192], state: 1
+[47918.419572] name: aptd, parent pid:[1], pid: [1194], state: 1
+[47918.419575] ---thread---name: aptd, parent pid:[1], pid: [1194], state: 1
+[47918.419580] name: gnome-terminal, parent pid:[1], pid: [1202], state: 1
+[47918.419620] ---thread---name: gnome-terminal, parent pid:[1], pid: [1202], state: 1
+[47918.419669] ---thread---name: gnome-terminal, parent pid:[1], pid: [1205], state: 1
+[47918.419672] name: gnome-pty-helpe, parent pid:[1202], pid: [1203], state: 1
+[47918.419675] ---thread---name: gnome-pty-helpe, parent pid:[1202], pid: [1203], state: 1
+[47918.419679] name: bash, parent pid:[1202], pid: [1204], state: 1
+[47918.419681] ---thread---name: bash, parent pid:[1202], pid: [1204], state: 1
+[47918.419685] name: flush-8:16, parent pid:[2], pid: [1349], state: 1
+[47918.419687] ---thread---name: flush-8:16, parent pid:[2], pid: [1349], state: 1
+[47918.419691] name: part1-inspect, parent pid:[1204], pid: [1386], state: 0
+[47918.419694] ---thread---name: part1-inspect, parent pid:[1204], pid: [1386], state: 0
+[47918.419697] ---thread---name: part1-inspect, parent pid:[1204], pid: [1387], state: 0
+[47918.419700] ---thread---name: part1-inspect, parent pid:[1204], pid: [1388], state: 0
+[47918.419703] ---thread---name: part1-inspect, parent pid:[1204], pid: [1389], state: 0
+[47918.419706] ---thread---name: part1-inspect, parent pid:[1204], pid: [1390], state: 0
