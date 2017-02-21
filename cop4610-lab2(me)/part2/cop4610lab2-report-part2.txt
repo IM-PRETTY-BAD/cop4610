@@ -1,6 +1,0 @@
-Michael Garrett, Winicius Siqueira, Michael Weiland
-COP4610 Lab 2 - Part2
-
-	The News Conference Multi-Thread Program uses pthread_mutexes and sempahores. The two mutexes are used to control who can speak at a given time. One semaphore is used to limit the amount of reporters in the room.
-	The two mutexes serve different function. One mutex allows only one reporter to speak at a time. The other mutex allows either the speaker or the reporter to talk at a given time.
-	The semaphore integer is initialized to the value the user enters into the command line. The semaphore integer decrements when sem_wait is called from the EnterConferenceRoom() function. If the semaphore integer is 0, then the execution of the thread waits there. If the semaphore integer is greater than or equal to 1, then the execution of the thread does not wait there (In other words, the reporter is allowed to enter the room).
