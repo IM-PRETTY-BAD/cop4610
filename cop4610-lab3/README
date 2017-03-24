@@ -1,0 +1,23 @@
+=================Header block: Also goes inside testcall.c
+Michael Garrett, Winicius Siqueira, Michael Weiland
+COP4610 Lab 3 - Memory Management
+Program Description:
+	This lab requires us to compare the fragmentation between the first-fit algorithm and the best-fit algorithm in "slob.c". To get the fragmentation of memory we implemented two system calls in "slob.c" that returns the average of 100 entries for memory claimed and memory free. The 100 entries are stored in the arrays amt_claimed[100] and amt_free[100] in "slob.c".
+	
+	We have a test program called "testcall" that calls the system calls in "slob.c" and prints the values of both system calls. The values are in bytes. 
+=================End of Header block
+
+Observations:
+The amount of fragmentation suffered by SLOB using the first-fit algorithm is:
+[Add content here]
+
+The amount of fragmentation suffered by SLOB using the best-fit algorithm is:
+[Add content here]
+
+Conclusions:
+We have determined that the fragmentation suffered by SLOB using the best-fit algorithm is [lower|higher] than the first-fit algorithm. We have come to that conclusion because the average of the total free memory space in free_slob_small is [lower|higher] for the best-fit algorithm than it is for the first-fit algorithm.
+
+Responsibilities:
+Michael Garrett - compiled, ran, tested, and edited code
+Winicius Siqueira - compiled, ran, tested, and wrote best-fit algorithm
+Michael Weiland - compiled, ran, and tested code
