@@ -76,12 +76,6 @@
 #include <linux/string.h>
 #include <linux/linkage.h>
 
-/*Added by Michael G*/
-#include <linux/unistd.h>
-#define __NR_get_slob_amt_claimed 342
-#define __NR_get_slob_amt_free 343
-/*Added by Michael G*/
-
 long amt_claimed[100];
 //amt_claimed[0]=-1.0;
 //memset(amt_claimed, 0, sizeof(amt_claimed));	//sets array to 0
