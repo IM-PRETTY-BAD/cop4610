@@ -289,7 +289,7 @@ static void *slob_page_alloc(struct slob_page *sp, size_t size, int align)
 	/* Added by Winicius*/
 	slob_t *best_fit_cur = NULL;
 	slob_t *best_fit_prev = NULL;
-	int best_fit_delta = 999999;
+	long best_fit_delta = 999999;
 	
 	for (prev = NULL, cur = sp->free; ; prev = cur, cur = slob_next(cur)) {
 		slobidx_t avail = slob_units(cur);
@@ -457,7 +457,7 @@ static void *slob_alloc(size_t size, gfp_t gfp, int align, int node)
 			if(size < SLOB_BREAK1){
 				long temp_amt_free = 0;
 				list_for_each_entry(sp, &free_slob_small, list) {
-					temp_amt_free += sp->units;
+					temp_amt_free += ((sp->units*SLOB_UNIT)-SLOB_UNIT+1);
 				}
 				amt_claimed[count1] = size;
 				amt_free[count1] = temp_amt_free;
