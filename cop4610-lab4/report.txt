@@ -1,0 +1,147 @@
+As soon as the clook module is selected using
+"echo clook > /sys/sdb/block/queue/scheduler",
+the message "io scheduler clook registered" can be seen
+using the "dmesg" command and immediately following it is
+the series of printk messages "[CLOOK] add/dsp R/W x".
+The sectors in the prink messages are updated whenever the
+tests.sh file is run using sh. Note that the sectord are written to
+in ascending order, as they should be for a CLOOK algorithm.
+
+Here is some sample output using dmesg immediately after running
+tests.sh:
+
+[   47.757714] eth3: no IPv6 routers present
+[ 1819.596653] io scheduler clook registered
+[ 1878.664280] [CLOOK] add R 1044094
+[ 1878.664290] [CLOOK] dsp R 1044094
+[ 1878.664497] [CLOOK] add R 1044206
+[ 1878.664513] [CLOOK] dsp R 1044206
+[ 1878.664611] [CLOOK] add R 126
+[ 1878.664617] [CLOOK] dsp R 126
+[ 1878.687451] [CLOOK] add R 134
+[ 1878.687461] [CLOOK] dsp R 134
+[ 1878.688294] [CLOOK] add R 1044222
+[ 1878.688300] [CLOOK] dsp R 1044222
+[ 1878.688435] [CLOOK] add R 1043966
+[ 1878.688447] [CLOOK] dsp R 1043966
+[ 1878.688566] [CLOOK] add R 1044158
+[ 1878.688575] [CLOOK] dsp R 1044158
+[ 1878.688721] [CLOOK] add R 1043822
+[ 1878.688731] [CLOOK] dsp R 1043822
+[ 1878.688849] [CLOOK] add R 1044214
+[ 1878.688857] [CLOOK] dsp R 1044214
+[ 1878.689473] [CLOOK] add R 2174
+[ 1878.689479] [CLOOK] dsp R 2174
+[ 1878.689593] [CLOOK] add R 150
+[ 1878.689598] [CLOOK] dsp R 150
+[ 1878.690564] [CLOOK] add R 182
+[ 1878.690571] [CLOOK] dsp R 182
+[ 1878.691401] [CLOOK] add R 246
+[ 1878.691407] [CLOOK] dsp R 246
+[ 1878.692048] [CLOOK] add R 142
+[ 1878.692054] [CLOOK] dsp R 142
+[ 1878.693411] [CLOOK] add R 254
+[ 1878.693417] [CLOOK] dsp R 254
+[ 1878.693888] [CLOOK] add R 190
+[ 1878.693897] [CLOOK] dsp R 190
+[ 1878.694484] [CLOOK] add R 382
+[ 1878.694491] [CLOOK] dsp R 382
+[ 1878.694929] [CLOOK] add R 390
+[ 1878.694935] [CLOOK] dsp R 390
+[ 1878.695371] [CLOOK] add R 398
+[ 1878.695377] [CLOOK] dsp R 398
+[ 1878.695819] [CLOOK] add R 894
+[ 1878.695833] [CLOOK] dsp R 894
+[ 1878.696319] [CLOOK] add R 902
+[ 1878.696330] [CLOOK] dsp R 902
+[ 1878.696707] [CLOOK] add R 910
+[ 1878.696713] [CLOOK] dsp R 910
+[ 1878.697612] [CLOOK] add R 638
+[ 1878.697633] [CLOOK] dsp R 638
+[ 1878.698340] [CLOOK] add R 158
+[ 1878.698346] [CLOOK] dsp R 158
+[ 1878.698879] [CLOOK] add R 4222
+[ 1878.698886] [CLOOK] dsp R 4222
+[ 1878.702203] [CLOOK] add R 128
+[ 1878.702206] [CLOOK] dsp R 128
+[ 1878.702761] [CLOOK] add R 126
+[ 1878.702763] [CLOOK] dsp R 126
+[ 1878.703283] [CLOOK] add R 134
+[ 1878.703285] [CLOOK] dsp R 134
+[ 1878.703731] [CLOOK] add R 406
+[ 1878.703733] [CLOOK] dsp R 406
+[ 1878.704221] EXT3-fs: barriers not enabled
+[ 1878.704227] [CLOOK] add R 528510
+[ 1878.704229] [CLOOK] dsp R 528510
+[ 1878.707371] [CLOOK] add R 528518
+[ 1878.707385] [CLOOK] add R 528606
+[ 1878.707388] [CLOOK] dsp R 528518
+[ 1878.707412] [CLOOK] dsp R 528606
+[ 1878.708689] [CLOOK] add R 528582
+[ 1878.708694] [CLOOK] add R 528614
+[ 1878.708725] [CLOOK] dsp R 528582
+[ 1878.708742] [CLOOK] dsp R 528614
+[ 1878.720392] [CLOOK] add W 126
+[ 1878.720399] [CLOOK] add W 390
+[ 1878.720403] [CLOOK] add W 4486
+[ 1878.720410] [CLOOK] dsp W 126
+[ 1878.720433] [CLOOK] dsp W 390
+[ 1878.720444] [CLOOK] dsp W 4486
+[ 1878.720543] [CLOOK] add W 528510
+[ 1878.720545] [CLOOK] dsp W 528510
+[ 1878.721909] kjournald starting.  Commit interval 5 seconds
+[ 1878.721986] EXT3-fs (sdb5): warning: checktime reached, running
+e2fsck is recommended
+[ 1878.721999] [CLOOK] add W 126
+[ 1878.722001] [CLOOK] dsp W 126
+[ 1878.722194] EXT3-fs (sdb5): using internal journal
+[ 1878.722197] EXT3-fs (sdb5): recovery complete
+[ 1878.722206] [CLOOK] add W 528510
+[ 1878.722210] [CLOOK] dsp W 528510
+[ 1878.722300] EXT3-fs (sdb5): mounted filesystem with ordered data mode
+[ 1930.573746] [CLOOK] add W 528510
+[ 1930.573751] [CLOOK] dsp W 528510
+[ 1930.574193] [CLOOK] add W 528518
+[ 1930.574211] [CLOOK] dsp W 528518
+[ 1930.574440] [CLOOK] add W 528574
+[ 1930.574442] [CLOOK] dsp W 528574
+[ 1960.629615] [CLOOK] add W 134
+[ 1960.629629] [CLOOK] add W 390
+[ 1960.629644] [CLOOK] add W 4486
+[ 1960.629652] [CLOOK] add W 126
+[ 1960.629655] [CLOOK] dsp W 126
+[ 1960.629703] [CLOOK] dsp W 134
+[ 1960.629724] [CLOOK] dsp W 390
+[ 1960.629890] [CLOOK] dsp W 4486
+[ 2075.581057] [CLOOK] add W 114814
+[ 2075.581066] [CLOOK] dsp W 114814
+[ 2075.581258] [CLOOK] add W 528582
+[ 2075.581315] [CLOOK] add W 528614
+[ 2075.581319] [CLOOK] dsp W 528582
+[ 2075.581339] [CLOOK] dsp W 528614
+[ 2075.581561] [CLOOK] add W 528638
+[ 2075.581563] [CLOOK] dsp W 528638
+[ 2115.149623] [CLOOK] add W 134
+[ 2115.149631] [CLOOK] add W 390
+[ 2115.149640] [CLOOK] add W 4486
+[ 2115.153558] [CLOOK] dsp W 134
+[ 2115.153601] [CLOOK] dsp W 390
+[ 2115.153610] [CLOOK] dsp W 4486
+[ 2568.572977] [CLOOK] add W 114814
+[ 2568.572988] [CLOOK] dsp W 114814
+[ 2568.573243] [CLOOK] add W 528646
+[ 2568.573249] [CLOOK] dsp W 528646
+[ 2568.573368] [CLOOK] add W 528678
+[ 2568.573370] [CLOOK] dsp W 528678
+[ 2585.581244] [CLOOK] add W 114838
+[ 2585.581258] [CLOOK] dsp W 114830
+[ 2585.581606] [CLOOK] add W 528686
+[ 2585.581612] [CLOOK] dsp W 528686
+[ 2585.581819] [CLOOK] add W 528718
+[ 2585.581822] [CLOOK] dsp W 528718
+[ 2607.757142] [CLOOK] add W 134
+[ 2607.757151] [CLOOK] add W 390
+[ 2607.757155] [CLOOK] add W 406
+[ 2607.761342] [CLOOK] dsp W 134
+[ 2607.761391] [CLOOK] dsp W 390
+[ 2607.761408] [CLOOK] dsp W 406
