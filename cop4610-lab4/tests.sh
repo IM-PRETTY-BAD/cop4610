@@ -16,5 +16,4 @@ B1=$(stat -c%s "$T1")
 B2=$(stat -c%s "$T2")
 
 echo "$T1 is now $(($LENGTH*2)) lines longer and $B1 bytes in size."
-
 echo "$T2 is now $(($LENGTH*2)) lines longer and $B2 bytes in size."
