@@ -10,8 +10,8 @@ As soon as the clook module is selected using
 the message "io scheduler clook registered" can be seen
 using the "dmesg" command and immediately following it is
 the series of printk messages "[CLOOK] add/dsp R/W x".
-The sectors in the prink messages are updated whenever the
-tests.sh file is run using sh. Note that the sectord are written to
+The sectors in the printk messages are updated whenever the
+tests.sh file is run using sh. Note that the sectors are written to
 in ascending order, as they should be for a CLOOK algorithm.
 
 Here is some sample output using dmesg immediately after running
