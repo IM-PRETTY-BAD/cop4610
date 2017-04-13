@@ -1,3 +1,10 @@
+Lab Assignment 4 Report
+
+Contributors:
+Michael Garrett: Implementing C-LOOK I/O scheduler
+Winicius Siqueira: Testing and Report
+Michael Weiland: Testing and Report
+
 As soon as the clook module is selected using
 "echo clook > /sys/sdb/block/queue/scheduler",
 the message "io scheduler clook registered" can be seen
